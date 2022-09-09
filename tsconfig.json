@@ -11,9 +11,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "lib-ngx-mrlonis-shared": [
-        "dist/lib-ngx-mrlonis-shared"
-      ]
+      "lib-ngx-mrlonis-shared": ["dist/lib-ngx-mrlonis-shared"]
     },
     "sourceMap": true,
     "declaration": false,

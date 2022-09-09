@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "prettier": "prettier --config .prettierrc --write \"**/*.{ts,js,css,scss,html,json,md}\"",
     "prepare": "husky install",
-    "gauntlet": "npm run-script prettier && npm run-script build -- --project ui-genshin-impact && npm run-script test:ci -- --project ui-genshin-impact && npm run-script build -- --project ui-mythic-heroes && npm run-script test:ci -- --project ui-mythic-heroes && npm run-script lint -- --fix"
+    "gauntlet": "npm run-script prettier && npm run-script test:ci -- --project lib-ngx-mrlonis-shared && npm run-script test:ci -- --project ui-genshin-impact && npm run-script test:ci -- --project ui-mythic-heroes && npm run-script lint -- --fix"
   },
   "private": true,
   "dependencies": {

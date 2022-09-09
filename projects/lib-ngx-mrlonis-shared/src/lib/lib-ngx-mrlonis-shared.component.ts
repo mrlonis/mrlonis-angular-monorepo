@@ -1,20 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'lib-lib-ngx-mrlonis-shared',
-  template: `
-    <p>
-      lib-ngx-mrlonis-shared works!
-    </p>
-  `,
-  styles: [
-  ]
+  template: ` <p>lib-ngx-mrlonis-shared works!</p> `,
+  styles: [],
 })
-export class LibNgxMrlonisSharedComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class LibNgxMrlonisSharedComponent {}

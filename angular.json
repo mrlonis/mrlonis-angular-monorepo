@@ -23,10 +23,7 @@
             "polyfills": "projects/ui-genshin-impact/src/polyfills.ts",
             "tsConfig": "projects/ui-genshin-impact/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/ui-genshin-impact/src/favicon.ico",
-              "projects/ui-genshin-impact/src/assets"
-            ],
+            "assets": ["projects/ui-genshin-impact/src/favicon.ico", "projects/ui-genshin-impact/src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/ui-genshin-impact/src/styles.scss"
@@ -92,10 +89,7 @@
             "tsConfig": "projects/ui-genshin-impact/tsconfig.spec.json",
             "karmaConfig": "projects/ui-genshin-impact/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/ui-genshin-impact/src/favicon.ico",
-              "projects/ui-genshin-impact/src/assets"
-            ],
+            "assets": ["projects/ui-genshin-impact/src/favicon.ico", "projects/ui-genshin-impact/src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/ui-genshin-impact/src/styles.scss"
@@ -106,10 +100,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "projects/ui-genshin-impact/**/*.ts",
-              "projects/ui-genshin-impact/**/*.html"
-            ]
+            "lintFilePatterns": ["projects/ui-genshin-impact/**/*.ts", "projects/ui-genshin-impact/**/*.html"]
           }
         }
       }
@@ -134,10 +125,7 @@
             "polyfills": "projects/ui-mythic-heroes/src/polyfills.ts",
             "tsConfig": "projects/ui-mythic-heroes/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/ui-mythic-heroes/src/favicon.ico",
-              "projects/ui-mythic-heroes/src/assets"
-            ],
+            "assets": ["projects/ui-mythic-heroes/src/favicon.ico", "projects/ui-mythic-heroes/src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/ui-mythic-heroes/src/styles.scss"
@@ -203,10 +191,7 @@
             "tsConfig": "projects/ui-mythic-heroes/tsconfig.spec.json",
             "karmaConfig": "projects/ui-mythic-heroes/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/ui-mythic-heroes/src/favicon.ico",
-              "projects/ui-mythic-heroes/src/assets"
-            ],
+            "assets": ["projects/ui-mythic-heroes/src/favicon.ico", "projects/ui-mythic-heroes/src/assets"],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/ui-mythic-heroes/src/styles.scss"
@@ -217,10 +202,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "projects/ui-mythic-heroes/**/*.ts",
-              "projects/ui-mythic-heroes/**/*.html"
-            ]
+            "lintFilePatterns": ["projects/ui-mythic-heroes/**/*.ts", "projects/ui-mythic-heroes/**/*.html"]
           }
         }
       }
@@ -257,18 +239,13 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "projects/lib-ngx-mrlonis-shared/**/*.ts",
-              "projects/lib-ngx-mrlonis-shared/**/*.html"
-            ]
+            "lintFilePatterns": ["projects/lib-ngx-mrlonis-shared/**/*.ts", "projects/lib-ngx-mrlonis-shared/**/*.html"]
           }
         }
       }
     }
   },
   "cli": {
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }

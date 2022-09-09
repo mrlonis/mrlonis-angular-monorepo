@@ -8,9 +8,8 @@ describe('LibNgxMrlonisSharedComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LibNgxMrlonisSharedComponent ]
-    })
-    .compileComponents();
+      declarations: [LibNgxMrlonisSharedComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LibNgxMrlonisSharedComponent);
     component = fixture.componentInstance;
