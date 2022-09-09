@@ -24,7 +24,10 @@
             "tsConfig": "projects/ui-genshin-impact/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["projects/ui-genshin-impact/src/favicon.ico", "projects/ui-genshin-impact/src/assets"],
-            "styles": ["projects/ui-genshin-impact/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/ui-genshin-impact/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -87,7 +90,10 @@
             "karmaConfig": "projects/ui-genshin-impact/karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": ["projects/ui-genshin-impact/src/favicon.ico", "projects/ui-genshin-impact/src/assets"],
-            "styles": ["projects/ui-genshin-impact/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "projects/ui-genshin-impact/src/styles.scss"
+            ],
             "scripts": []
           }
         },
