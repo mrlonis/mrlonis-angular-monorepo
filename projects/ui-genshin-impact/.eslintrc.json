@@ -1,0 +1,35 @@
+{
+  "extends": "../../.eslintrc.json",
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["projects/ui-genshin-impact/tsconfig.app.json", "projects/ui-genshin-impact/tsconfig.spec.json"],
+        "createDefaultProgram": true
+      },
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "mrlonis",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "mrlonis",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "rules": {}
+    }
+  ]
+}
