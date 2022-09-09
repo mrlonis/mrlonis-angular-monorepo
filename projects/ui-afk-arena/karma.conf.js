@@ -32,7 +32,7 @@ module.exports = function (config) {
       suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/lib-ngx-mrlonis-shared'),
+      dir: require('path').join(__dirname, '../../coverage/ui-afk-arena'),
       subdir: '.',
       reporters: [{ type: 'html' }, { type: 'text-summary' }, { type: 'cobertura' }],
       fixWebpackSourcePaths: true,
