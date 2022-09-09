@@ -8,12 +8,15 @@
     "watch": "ng build --watch --configuration development",
     "analyze": "ng build --prod --stats-json && webpack-bundle-analyzer ./dist/demo-genshin-impact-angular/stats.json",
     "test": "ng test",
-    "test:ci": "npm run-script test -- --watch=false --code-coverage --reporters progress,coverage,junit --browsers ChromeHeadless",
+    "test:ci": "npm run test -- --watch=false --code-coverage --reporters progress,coverage,junit --browsers ChromeHeadless",
     "lint": "ng lint",
     "prettier": "prettier --config .prettierrc --write \"**/*.{ts,js,css,scss,html,json,md}\"",
     "prepare": "husky install",
-    "test:all": "npm run-script test:ci -- --project lib-ngx-mrlonis-shared && npm run-script test:ci -- --project ui-afk-arena && npm run-script test:ci -- --project ui-genshin-impact && npm run-script test:ci -- --project ui-mythic-heroes",
-    "gauntlet": "npm run-script prettier && npm run-script test:all && npm run-script lint -- --fix"
+    "lib-ngx-mrlonis-shared": "npm run build -- --project lib-ngx-mrlonis-shared && npm run test:ci -- --project lib-ngx-mrlonis-shared",
+    "ui-afk-arena": "npm run build -- --project ui-afk-arena && npm run test:ci -- --project ui-afk-arena",
+    "ui-genshin-impact": "npm run build -- --project ui-genshin-impact && npm run test:ci -- --project ui-genshin-impact",
+    "ui-mythic-heroes": "npm run build -- --project ui-mythic-heroes && npm run test:ci -- --project ui-mythic-heroes",
+    "gauntlet": "npm run prettier && npm run lib-ngx-mrlonis-shared && npm run ui-afk-arena && npm run ui-genshin-impact && npm run ui-mythic-heroes && npm run lint -- --fix"
   },
   "private": true,
   "dependencies": {
