@@ -10,6 +10,11 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "lib-ngx-mrlonis-shared": [
+        "dist/lib-ngx-mrlonis-shared"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
