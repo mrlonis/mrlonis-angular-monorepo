@@ -1,0 +1,10 @@
+.angular/
+.husky/
+coverage/
+dist/
+junit/
+node_modules/
+storybook-static/
+documentation.json
+package-lock.json
+yarn.lock
