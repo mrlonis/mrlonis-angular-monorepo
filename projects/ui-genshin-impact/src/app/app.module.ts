@@ -1,20 +1,23 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { config as appConfig, CoreModule } from './core';
+import { CharactersModule } from './features';
+import { ApiConfigProvider, API_CONFIG_TOKEN } from './shared';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [AppComponent],
+  imports: [CharactersModule, CoreModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
+  providers: [
+    {
+      provide: API_CONFIG_TOKEN,
+      useValue: {
+        apiUrl: appConfig.apiUrl,
+      } as ApiConfigProvider,
+    },
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -31,28 +31,12 @@
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:import/recommended",
         "plugin:import/typescript",
-        "plugin:jsdoc/recommended",
+        // "plugin:jsdoc/recommended",
         "plugin:prettier/recommended"
         // "plugin:storybook/recommended"
       ],
       "plugins": ["deprecation"],
       "rules": {
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "type": "attribute",
-            "prefix": "mrlonis",
-            "style": "camelCase"
-          }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "mrlonis",
-            "style": "kebab-case"
-          }
-        ],
         "deprecation/deprecation": "error",
         "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
         "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
