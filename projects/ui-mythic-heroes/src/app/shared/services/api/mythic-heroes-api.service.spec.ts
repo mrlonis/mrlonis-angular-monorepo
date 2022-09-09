@@ -22,7 +22,7 @@ describe('MythicHeroesApiService', () => {
   });
 
   it('should getCollection', () => {
-    const testData: SpringDataRestResponse<Faction> = allFactions;
+    const testData = allFactions as SpringDataRestResponse<Faction>;
     apiService.getCollection('faction').subscribe((data) => expect(data).toEqual(testData));
     const req = httpTestingController.expectOne('http://fake-url.coms/faction?page=0&size=20');
     expect(req.request.method).toEqual('GET');
