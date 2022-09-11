@@ -14,6 +14,7 @@
     "prepare": "husky install",
     "lib-ngx-mrlonis-shared": "npm run build -- --project lib-ngx-mrlonis-shared && npm run test:ci -- --project lib-ngx-mrlonis-shared",
     "ps-angular-forms": "npm run build -- --project ps-angular-forms && npm run test:ci -- --project ps-angular-forms",
+    "ps-angular-fundamentals": "npm run build -- --project ps-angular-fundamentals && npm run test:ci -- --project ps-angular-fundamentals",
     "ps-angular-getting-started": "npm run build -- --project ps-angular-getting-started && npm run test:ci -- --project ps-angular-getting-started",
     "ui-afk-arena": "npm run build -- --project ui-afk-arena && npm run test:ci -- --project ui-afk-arena",
     "ui-genshin-impact": "npm run build -- --project ui-genshin-impact && npm run test:ci -- --project ui-genshin-impact",
