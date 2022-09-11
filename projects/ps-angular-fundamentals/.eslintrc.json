@@ -7,8 +7,7 @@
       "parserOptions": {
         "project": [
           "projects/ps-angular-fundamentals/tsconfig.app.json",
-          "projects/ps-angular-fundamentals/tsconfig.spec.json",
-          "projects/ps-angular-fundamentals/e2e/tsconfig.json"
+          "projects/ps-angular-fundamentals/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

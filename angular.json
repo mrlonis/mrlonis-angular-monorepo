@@ -446,18 +446,6 @@
           "options": {
             "lintFilePatterns": ["projects/ps-angular-forms/**/*.ts", "projects/ps-angular-forms/**/*.html"]
           }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/ps-angular-forms/e2e/protractor.conf.js",
-            "devServerTarget": "ps-angular-forms:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ps-angular-forms:serve:production"
-            }
-          }
         }
       }
     },
@@ -570,18 +558,6 @@
               "projects/ps-angular-getting-started/**/*.html"
             ]
           }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ps-angular-getting-started:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ps-angular-getting-started:serve:production"
-            }
-          }
         }
       }
     },
@@ -683,18 +659,6 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": ["projects/ps-angular-fundamentals/**/*.ts", "projects/ps-angular-fundamentals/**/*.html"]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/ps-angular-fundamentals/e2e/protractor.conf.js",
-            "devServerTarget": "ps-angular-fundamentals:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ps-angular-fundamentals:serve:production"
-            }
           }
         }
       }

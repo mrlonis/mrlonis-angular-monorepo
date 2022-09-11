@@ -23,5 +23,5 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "cSpell.words": ["compodoc", "genshin", "Mrlonis", "prettierrc"]
+  "cSpell.words": ["compodoc", "genshin", "Mrlonis", "packagr", "prettierrc"]
 }
