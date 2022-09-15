@@ -13,6 +13,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { RouterModule } from '@angular/router';
+import { TableVirtualScrollDataSource, TableVirtualScrollModule } from 'ng-table-virtual-scroll';
 import { forkJoin, Observable, of } from 'rxjs';
 import {
   BaseResource,
@@ -21,8 +22,6 @@ import {
   MythicHero,
   MythicHeroesAggressiveCache,
   Rarity,
-  TableVirtualScrollDataSource,
-  TableVirtualScrollModule,
   Type,
 } from '../../../shared';
 
